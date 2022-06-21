@@ -2,6 +2,7 @@ require("dotenv").config();
 const { getApiToken, getBlocks, checkEncoded } = require("./apis");
 const { check } = require("./check");
 const { initAxios } = require("./config/axios.config");
+
 initAxios();
 
 const app = async () => {

@@ -4,7 +4,7 @@ const check = async (blocks = [], token) => {
   let sortedBlocks = [...blocks];
   let sortedToIndex = 0;
 
-  while (sortedToIndex !== sortedBlocks.length - 2) {
+  while (sortedBlocks.length > 2 && sortedToIndex !== sortedBlocks.length - 2) {
     for (let i = sortedToIndex + 1; i < sortedBlocks.length; i++) {
       const areConsecutives = await checkBlocks(
         [sortedBlocks[sortedToIndex], sortedBlocks[i]],

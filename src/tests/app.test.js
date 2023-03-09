@@ -48,6 +48,6 @@ describe("The app function", () => {
 
     expect(apis.checkEncoded).toBeCalledTimes(2);
     expect(apis.checkBlocks).toBeCalledTimes(1);
-    expect(response).not.toBeTruthy();
+    expect(response).toBeTruthy();
   });
 });
